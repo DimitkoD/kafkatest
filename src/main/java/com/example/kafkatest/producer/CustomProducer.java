@@ -31,11 +31,14 @@ public class CustomProducer {
     }
 
     public Map<String, Object> createOrder() {
+        double random = Math.random();
         Map<String, Object> order = new HashMap<>();
         order.put("orderId", UUID.randomUUID());
         order.put("user", "Dimitar Dobrev");
         order.put("item", "phone");
         order.put("quantity", 1);
+        order.put("F", random < 0.5 ? "FAIL" : "TRUE");
+
         return order;
     }
 
