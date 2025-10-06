@@ -17,7 +17,7 @@ public class KafkaTestApplication implements CommandLineRunner {
         this.customProducer = customProducer;
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         SpringApplication.run(KafkaTestApplication.class, args);
     }
 
